@@ -1,0 +1,8 @@
+- insert:
+    - id: dsh-wsl-expose
+      name: dsh-wsl-expose
+      config:
+        timeoutMs: 15000
+        defaultPort: 3080
+        allowApply: false
+        listenAddress: 0.0.0.0
