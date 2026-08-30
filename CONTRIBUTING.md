@@ -6,3 +6,6 @@ Issues and PRs are welcome for `dsh-wsl-expose`.
 2. Keep `allowApply` default `false`; never auto-elevate.
 3. Run `npm test` when tests exist.
 4. Update `README.md` and `README.zh.md` together when behavior changes.
+
+Thanks for helping keep the WSL kit safe.
+
