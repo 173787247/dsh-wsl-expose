@@ -11,12 +11,12 @@ export function apply(ctx, config = {}) {
   ctx.systemPrompt.section({
     name: "tool:wsl_expose",
     order: 113,
-    text: "Use wsl_expose for WSL/Windows interop: Advise or apply allowlisted Windows portproxy for exposing a WSL port.",
+    text: "Use wsl_expose when Windows cannot reach a WSL port. For dsh web prefer kit restart-dsh-web.sh → http://127.0.0.1:3081/ (never dsh --host 0.0.0.0). Portproxy is optional/LAN.",
   });
 
   ctx.tools.register({
     name: "wsl_expose",
-    description: "Advise or apply allowlisted Windows portproxy for exposing a WSL port.",
+    description: "Advise/apply Windows portproxy for a WSL port; prefers :3081 relay for dsh and reads .wslconfig networkingMode.",
     parameters: core.parameters(config),
     output: {
       schema: core.outputSchema(),

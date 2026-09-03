@@ -1,6 +1,11 @@
 # Changelog
 
+## 0.2.0
+
+- Read `networkingMode` from Windows `.wslconfig`.
+- Prefer kit `:3081` relay for dsh; remove incorrect “bind dsh to 0.0.0.0” advice.
+- Expose `browserHint` in tool output.
+
 ## 0.1.0
 
-- Initial public release of `dsh-wsl-expose` for DeepSeek Harness on Windows + WSL.
-- Tool `wsl_expose`: `status`, `plan`, `apply`, `remove` with default `allowApply: false`.
+- Initial portproxy advise/apply.

@@ -1,7 +1,7 @@
 {
   "name": "dsh-wsl-expose",
-  "version": "0.1.0",
-  "description": "Advise or apply allowlisted Windows portproxy for exposing a WSL port.",
+  "version": "0.2.0",
+  "description": "WSL port expose advisor: .wslconfig networkingMode, dsh :3081 relay, optional portproxy.",
   "license": "MIT",
   "repository": {
     "type": "git",
