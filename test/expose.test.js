@@ -22,6 +22,7 @@ describe("buildExposeAdvice", () => {
     const tips = buildExposeAdvice({ networkingMode: "nat", port: 3080 });
     assert.ok(tips.some((t) => /MUST stay on 127\.0\.0\.1/i.test(t)));
     assert.ok(tips.some((t) => /3081/i.test(t)));
+    assert.ok(tips.some((t) => /check-dsh-health/i.test(t) && /port_doctor/i.test(t)));
     assert.ok(!tips.some((t) => /Bind dsh web to 0\.0\.0\.0/i.test(t)));
   });
 
