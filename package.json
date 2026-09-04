@@ -1,7 +1,7 @@
 {
   "name": "dsh-wsl-expose",
-  "version": "0.2.0",
-  "description": "WSL port expose advisor: .wslconfig networkingMode, dsh :3081 relay, optional portproxy.",
+  "version": "0.2.1",
+  "description": "WSL port expose advisor: health/port_doctor before portproxy; dsh :3081 relay.",
   "license": "MIT",
   "repository": {
     "type": "git",
