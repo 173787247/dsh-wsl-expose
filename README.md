@@ -6,6 +6,18 @@ DeepSeek Harness tool **`wsl_expose`**: advise or apply Windows **portproxy** so
 
 [中文说明 → README.zh.md](./README.zh.md)
 
+## Where it sits
+
+Advises how a WSL port is reached from Windows or the LAN. Local chat still uses :3081/?token=.
+
+```mermaid
+flowchart LR
+  agent["dsh agent"] --> tool["wsl_expose"] --> port["WSL port to Windows or LAN"]
+```
+
+Suite diagram and version snapshot: [dsh-wsl-kit](https://github.com/173787247/dsh-wsl-kit#how-the-pieces-fit). This plugin is **0.2.2** (full; also in llm). Do not copy that matrix into this README.
+
+
 ## Compatibility
 
 | Field | Value |

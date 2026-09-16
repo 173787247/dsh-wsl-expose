@@ -6,6 +6,18 @@ DeepSeek Harness 工具 **`wsl_expose`**：建议或执行 Windows **portproxy**
 
 [English → README.md](./README.md)
 
+## 在套件里的位置
+
+建议 WSL 端口如何从 Windows 或局域网访问。本机聊天仍走 :3081/?token=。
+
+```mermaid
+flowchart LR
+  agent["dsh agent"] --> tool["wsl_expose"] --> port["WSL 端口到 Windows 或局域网"]
+```
+
+整套关系图和版本快照：[dsh-wsl-kit 中文说明](https://github.com/173787247/dsh-wsl-kit/blob/master/README.zh.md)。本插件是 **0.2.2**（full，也在 llm）。不要把那份总表抄进本 README。
+
+
 ## 兼容性
 
 | 项 | 值 |
