@@ -9,8 +9,8 @@ import {
 describe("readNetworkingMode", () => {
   it("parses .wslconfig via injected fs", () => {
     const mode = readNetworkingMode({
-      env: { WINDOWS_USER: "rchua" },
-      exists: (p) => p.endsWith("/rchua/.wslconfig"),
+      env: { WINDOWS_USER: "tester" },
+      exists: (p) => p.endsWith("/tester/.wslconfig"),
       readFile: () => "[wsl2]\nnetworkingMode=mirrored\n",
     });
     assert.equal(mode, "mirrored");
