@@ -1,6 +1,6 @@
 - insert:
     - id: dsh-wsl-expose
-      name: dsh-wsl-expose
+      name: dsh-wsl-portproxy
       config:
         timeoutMs: 30000
         defaultPort: 3080

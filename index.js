@@ -1,7 +1,7 @@
 import { detectWsl } from "./lib/wsl-host.js";
 import * as core from "./lib/expose.js";
 
-export const name = "dsh-wsl-expose";
+export const name = "dsh-wsl-portproxy";
 export const inject = ["tools", "systemPrompt"];
 
 export function apply(ctx, config = {}) {

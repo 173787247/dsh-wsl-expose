@@ -1,5 +1,5 @@
 {
-  "name": "dsh-wsl-expose",
+  "name": "dsh-wsl-portproxy",
   "version": "0.2.2",
   "description": "WSL port expose advisor; local UI uses :3081/?token= on dsh ≥0.1.2.",
   "license": "MIT",
